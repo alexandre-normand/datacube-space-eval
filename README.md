@@ -9,13 +9,13 @@ the total number of counters required to track all possible
 combinations of all field values.
 
 To build the software:
-1. run 'mvn package' to generate a tar.gz package in the target/ directory
-2. unpack the tar.gz package
-3. Scripts are located in bin/, and some sample files are in samples/
+# run 'mvn package' to generate a tar.gz package in the target/ directory
+# unpack the tar.gz package
+# Scripts are located in bin/, and some sample files are in samples/
 
 Example calculation run commands:
-'''
+```bash
 bin/calc-cardinality.sh '|' 42 mydata.txt cardinality
 hadoop fs -cat cardinality/part-r-* > cardinality.txt
 bin/calc-num-counters.py cardinality.txt
-'''
+```
