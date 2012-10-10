@@ -8,10 +8,7 @@ associated cardinality.  This script produces a single value, which is
 the total number of counters required to track all possible
 combinations of all field values.
 
-To build the software:
-# run 'mvn package' to generate a tar.gz package in the target/ directory
-# unpack the tar.gz package
-# Scripts are located in bin/, and some sample files are in samples/
+To build the software, run 'mvn package'.  This will generate a tar.gz package in the target/ directory. The tar.gz package contains scripts in the bin/ directory, and some sample files in samples/.
 
 Example calculation run commands:
 ```bash
